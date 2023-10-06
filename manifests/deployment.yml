@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: kalvapradyumnareddypipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kalvapradyumnareddypipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: kalvapradyumnareddypipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: kalvapradyumnareddypipelinesjavascriptdocker 
+          image: test214284.azurecr.io/kalvapradyumnareddypipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
